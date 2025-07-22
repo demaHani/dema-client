@@ -1,50 +1,37 @@
-# React Frontend - Login App
+# Travel Booking Frontend
 
-This is the frontend client for the full-stack login application, built with React and styled-components.
+This is the frontend for the Travel Booking App, built with React.
 
-## 🚀 Features
-- Modern, responsive UI
-- Login, Signup, and Forgot Password forms
-- Form validation and error handling
-- Password visibility toggle
-- Navigation between forms
-- API integration with backend server
+## Features
+- User and admin login/signup (email & password)
+- Browse and search hotels
+- Book hotels
+- Admin dashboard for managing hotels
+- Google Maps integration for hotel locations
+- Clean, modern UI
 
-## 📋 Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
+## Getting Started
 
-## 🛠️ Setup & Installation
+### 1. Install dependencies
+```
+npm install
+```
 
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-   The app will run at [http://localhost:3000](http://localhost:3000)
+### 2. Start the development server
+```
+npm start
+```
 
-## 🔌 API Proxy
-- API requests to `/api` are automatically proxied to the backend server at `http://localhost:5000` (see `proxy` in `package.json`).
+The app will run at [http://localhost:3000](http://localhost:3000).
 
-## 📦 Scripts
-- `npm start` — Start the development server
-- `npm run build` — Build for production
-- `npm test` — Run tests
+## Project Structure
+- `src/components/` — React components
+- `src/App.jsx` — Main app entry point
+- `public/` — Static files
 
-## 📝 Customization
-- Edit UI and logic in `src/components/`
-- Update API endpoints as needed for your backend
-
-## 🤝 Contributing
-Pull requests are welcome! See the main project README for details.
+## Notes
+- Make sure the backend (Express.js server) is running for API requests.
+- No Google/Apple OAuth is used; authentication is email/password only.
 
 ---
-
-**Happy Coding!** 
+For backend setup, see the `dema-server/README.md` file. 
